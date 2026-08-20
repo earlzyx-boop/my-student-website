@@ -34,6 +34,7 @@ nav {
   gap: 20px;
   background-color: #222;
   padding: 15px;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -43,7 +44,7 @@ nav a {
 }
 
 nav a:hover {
-  color: blue;
+  color: #4da6ff;
 }
 
 section {
@@ -62,6 +63,45 @@ section {
   display: block;
   margin: 20px auto;
   object-fit: cover;
+}
+
+.education-card {
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.education-card h3 {
+  color: darkblue;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  padding: 10px 15px;
+  background-color: #222;
+  color: white;
+  border-radius: 5px;
+}
+
+.hobby-card {
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+.hobby-card h3 {
+  color: darkblue;
+}
+
+.contact-info p {
+  margin: 12px 0;
 }
 
 table {
@@ -85,23 +125,12 @@ tr:hover {
   background-color: #f0f0f0;
 }
 
-button {
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
+footer {
+  text-align: center;
+  padding: 20px;
   background-color: #222;
   color: white;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #444;
-}
-
-form textarea {
-  width: 300px;
-  height: 100px;
-  resize: none;
+  margin-top: 30px;
 }
 
 @media (max-width: 600px) {
@@ -118,7 +147,8 @@ form textarea {
     font-size: 12px;
   }
 
-  form textarea {
-    width: 100%;
+  th,
+  td {
+    padding: 8px;
   }
 }
